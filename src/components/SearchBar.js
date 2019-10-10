@@ -9,6 +9,7 @@ export default class SearchBar extends Component {
 
   onFormSubmit = e => {
     e.preventDefault()
+    console.log(this.state.term)
   }
 
   render() {
