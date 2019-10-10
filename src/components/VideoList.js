@@ -5,13 +5,12 @@ const VideoList = ({ videos }) => {
 
   function showVideos(movies) {
     return movies.map(movie => {
-      return <VideoItem />
+      return <VideoItem video={movie}/>
     })
   }
 
   return (
-    <div>
-      Video List
+    <div className="ui relaxed divided list">
       {showVideos(videos)}
     </div>
   )
